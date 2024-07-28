@@ -7,23 +7,24 @@ public class Reverse_EachCharacaterfromstring {
 		
 		String str = "My name is sheetal Jaswal";
 		String reverse = "";
-		String word[]=str.split(" ");
+		String word[] = str.split(" ");
 		
 		for(int i=0;i<word.length;i++)
 		{
-			String words=word[i];
-			String newString = "";
+			String words = word[i];
+			
 			char ch;
+			String newstr="";
 			for(int j=0;j<words.length();j++)
 			{
-				ch=words.charAt(j);
-				newString=ch+newString;
+				ch = words.charAt(j);
+				newstr = ch+newstr;
 			}
-			reverse=reverse+newString+" ";
+			reverse = reverse + newstr+" ";
 			
 		}
 		System.out.println(reverse);
-
-	}
-
 }
+}
+
+
